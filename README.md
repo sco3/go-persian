@@ -22,7 +22,7 @@ One can run `go-test.sh` instead:
 
 Test results:
 
-```
+```text
 
 cpu: AMD Ryzen 5 4500U with Radeon Graphics
 BenchmarkConvert
