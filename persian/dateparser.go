@@ -5,7 +5,7 @@ const formatLen = 17
 
 var _days = []int{-1, 30, 58, 89, 119, 150, 180, 211, 242, 272, 303, 333, 364}
 
-//Timestamp calculate ts from string
+// Timestamp calculate ts from string
 func Timestamp(str string, length int) int64 {
 	if length < formatLen {
 		return 0

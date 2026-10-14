@@ -5,12 +5,14 @@ A high-performance Go-to-C shared library for rapid CSV-to-Avro conversion using
 ## Quick Start
 
 1. **Build the shared library**:
+
 ```bash
    ./build-persian-lib.sh
 ```
 
 2. **Run benchmarks**:
-Run this in project root dir:
+   Run this in project root dir:
+
 ```bash
    zstd -d -k data/000000_0.csv.zst -o /tmp/000000_0.csv
    go test -v ./persian -bench=.
@@ -19,9 +21,10 @@ Run this in project root dir:
 One can run `go-test.sh` instead:
 
 Test results:
+
 ```
 
-cpu: AMD Ryzen 5 4500U with Radeon Graphics         
+cpu: AMD Ryzen 5 4500U with Radeon Graphics
 BenchmarkConvert
 2026/10/14 19:51:32 processed: 100000 lines.
 2026/10/14 19:51:33 processed: 200000 lines.

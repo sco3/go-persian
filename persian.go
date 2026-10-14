@@ -6,10 +6,10 @@ package main
 import "C"
 
 import (
-	"os"
-	"unsafe"
-	"persian/v2/persian"
 	"github.com/pkg/profile"
+	"os"
+	"persian/v2/persian"
+	"unsafe"
 )
 
 //export Java_sco3_kafka_Persian_persePtr

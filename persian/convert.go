@@ -7,7 +7,7 @@ import (
 	"github.com/go-avro/avro"
 )
 
-//WriteDouble write dbl
+// WriteDouble write dbl
 func WriteDouble(encoder avro.Encoder, field []byte) {
 	d, err := strconv.ParseFloat(string(field), 64)
 	if err != nil {
@@ -18,7 +18,7 @@ func WriteDouble(encoder avro.Encoder, field []byte) {
 	}
 }
 
-//WriteLong write long
+// WriteLong write long
 func WriteLong(encoder avro.Encoder, field []byte) {
 	l, err := strconv.ParseInt(string(field), 10, 64)
 	if err != nil {
@@ -30,13 +30,13 @@ func WriteLong(encoder avro.Encoder, field []byte) {
 
 }
 
-//WriteString write string
+// WriteString write string
 func WriteString(encoder avro.Encoder, field []byte) {
 	encoder.WriteInt(1)
 	encoder.WriteBytes(field)
 }
 
-//FldInfo exchange data betwen java and native/go
+// FldInfo exchange data betwen java and native/go
 type FldInfo struct {
 	Base int32
 
@@ -59,7 +59,7 @@ type FldInfo struct {
 	Ts  int64
 }
 
-//Convert creates avro from csv
+// Convert creates avro from csv
 func Convert(schema []byte, in []byte, out *MemBuffer, fld *FldInfo) int {
 	encoder := avro.NewBinaryEncoder(out)
 	//fields := bytes.Split(in, []byte("|"))

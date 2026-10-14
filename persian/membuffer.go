@@ -5,13 +5,13 @@ import (
 	"unsafe"
 )
 
-//MemBuffer is memory writer
+// MemBuffer is memory writer
 type MemBuffer struct {
 	Buf    []byte
 	Offset int
 }
 
-//SliceFromPtr creates slice
+// SliceFromPtr creates slice
 func SliceFromPtr(addr uintptr, size int) (t []byte) {
 	var sl = struct {
 		addr uintptr
@@ -22,13 +22,13 @@ func SliceFromPtr(addr uintptr, size int) (t []byte) {
 	return b
 }
 
-//NewMemBufferPtr created from address
+// NewMemBufferPtr created from address
 func NewMemBufferPtr(addr uintptr, size int) (t *MemBuffer) {
 	b := SliceFromPtr(addr, size)
 	return &MemBuffer{b, 0}
 }
 
-//AllocMemBuffer constructor from string
+// AllocMemBuffer constructor from string
 func AllocMemBuffer(size int) (t *MemBuffer) {
 	return &MemBuffer{make([]byte, size), 0}
 }
