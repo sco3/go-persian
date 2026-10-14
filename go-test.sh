@@ -1,3 +1,5 @@
+#!/usr/bin/env -S bash
+
 set -euo pipefail
 
 zstd -d -k data/000000_0.csv.zst -o /tmp/000000_0.csv
