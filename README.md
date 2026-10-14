@@ -42,3 +42,11 @@ BenchmarkConvert
 2026/10/14 19:51:41 Speed: 112491 records/second
 
 ```
+
+The linter was built from git repo with enforced go 1.27.2:
+
+```
+golangci-lint --version
+golangci-lint has version 2.14.1-0.20261013143752-f4e2329e669f+dirty built with go1.27.2 from (f4e2329e669f818fe3cbd3181a3e116e5aa24db7, modified: true, mod sum: "") on 2026-10-13T14:37:52Z
+
+```
