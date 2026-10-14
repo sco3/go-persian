@@ -1,6 +1,8 @@
 #!/usr/bin/env -S bash
 
-GOPATH=${GOPATH}:$(readlink -f .):$(readlink -f "${HOME}"/go)
+current_path=$(readlink -f .)
+go_home_path=$(readlink -f "${HOME}/go")
+GOPATH="${GOPATH}:${current_path}:${go_home_path}"
 export GOPATH
 
 cd src/main || exit
