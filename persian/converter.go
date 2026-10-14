@@ -66,6 +66,6 @@ func RunConverter() uint32 {
 	log.Printf("conv: %.2f\n", float64(nanos)/1000000000.0)
 	crc := hash.Sum32()
 	log.Printf("expected crc: 95646885 got crc: %x\n", crc)
-	log.Printf("Speed: %v record/second\n", cnt/int(took.Seconds()))
+	log.Printf("Speed: %v records/second\n", cnt/int(took.Seconds()))
 	return crc
 }

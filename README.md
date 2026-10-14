@@ -20,21 +20,22 @@ One can run `go-test.sh` instead:
 
 Test results:
 ```
+
 cpu: AMD Ryzen 5 4500U with Radeon Graphics         
 BenchmarkConvert
-2026/10/14 10:56:48 processed: 100000 lines.
-2026/10/14 10:56:49 processed: 200000 lines.
-2026/10/14 10:56:51 processed: 300000 lines.
-2026/10/14 10:56:52 processed: 400000 lines.
-2026/10/14 10:56:53 processed: 500000 lines.
-2026/10/14 10:56:55 processed: 600000 lines.
-2026/10/14 10:56:56 processed: 700000 lines.
-2026/10/14 10:56:57 processed: 800000 lines.
-2026/10/14 10:56:59 processed: 900000 lines.
-2026/10/14 10:57:00 processed: 1000000 lines.
-2026/10/14 10:57:00 time: 13.191800408s
-2026/10/14 10:57:00 conv: 9.81
-2026/10/14 10:57:00 expected crc: 95646885 got crc: 95646885
-2026/10/14 10:57:00 Speed: 77878 record/second
+2026/10/14 19:51:32 processed: 100000 lines.
+2026/10/14 19:51:33 processed: 200000 lines.
+2026/10/14 19:51:34 processed: 300000 lines.
+2026/10/14 19:51:35 processed: 400000 lines.
+2026/10/14 19:51:36 processed: 500000 lines.
+2026/10/14 19:51:37 processed: 600000 lines.
+2026/10/14 19:51:38 processed: 700000 lines.
+2026/10/14 19:51:39 processed: 800000 lines.
+2026/10/14 19:51:39 processed: 900000 lines.
+2026/10/14 19:51:40 processed: 1000000 lines.
+2026/10/14 19:51:41 time: 9.178962777s
+2026/10/14 19:51:41 conv: 6.78
+2026/10/14 19:51:41 expected crc: 95646885 got crc: 95646885
+2026/10/14 19:51:41 Speed: 112491 records/second
 
 ```
