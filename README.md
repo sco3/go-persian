@@ -10,6 +10,7 @@ A high-performance Go-to-C shared library for rapid CSV-to-Avro conversion using
 ```
 
 2. **Run benchmarks**:
+Unpack `data/000000_0.csv.zst` to `/tmp/000000_0.csv` before test or run `go-test.sh` instead:
 ```bash
    go test -v ./persian -bench=.
 ```
