@@ -1,7 +1,5 @@
 #!/usr/bin/env -S bash
 
-#javah -d ../c/include/ -classpath "../../../target/test-classes/:../../../target/dependency/*" com.tnf.avro.TestAvro
-
 go build -buildmode=c-shared -o libpersian-go.so
 
 ret=$?
