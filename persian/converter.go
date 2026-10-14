@@ -19,7 +19,7 @@ func RunConverter() uint32 {
 
 	start := time.Now()
 
-	file, err := os.Open("000000_0.csv")
+	file, err := os.Open("/tmp/000000_0.csv")
 	if err != nil {
 		panic(err)
 	}
